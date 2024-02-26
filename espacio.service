@@ -1,0 +1,10 @@
+[Unit]
+Description=Ejecuta el script de espacio cada 10 segundos
+
+[Service]
+ExecStart=/ruta/completa/hacia/tarea5.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
